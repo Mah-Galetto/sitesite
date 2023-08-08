@@ -61,20 +61,91 @@
        <section class="carrosel"> 
         <h2 class="carrossel__titulo">Novos Lançamentos</h2>
         <div class="swiper">
+            <div class="swiper-pagination"></div>
         <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka e Spring boot da Alurabooks"></div>
+        <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javacript da Alurabooks"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobrePOrtugol da Alurabooks"></div>
         </div>
-        <div class="swiper-pagination"></div>
         <div class="swiper-buton-prev"></div>
         <div class="swiper-buton-next"></div>
-        <div class="swiper-scrollbar"></div>
         </div>
-        
-       </section>   
-       <script src="https.//cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.mim.js">
-       </script>     
+        <div clas="card">
+            <div class="card_descricao">
+                <div class="descricao">
+                    <h3 class="descricao_titulo">Talvez você tambem se intresse por...</h3>
+                    <h2 class="descricao_titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Contruindo uma aplicação integrada com a plataforma do Google</p>
+
+                </div>
+                <img src="img/Angular.svg" class="descricao__imagem">
+            </div>
+
+            <!--segunda linha-->
+            
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar carrinho e compras"></li>
+                </ul>
+                 <!--segunda coluna-->
+                 <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+
+       </section> 
+       
+       <section class="topicos">
+        <h2 class="topicos__titulos".>TOPICO VISITADOS RECENTEMENTE</h2>
+        <ul class="topicos__lista">
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Android</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Marketing Digital</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Agile</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Startups</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">HTML e CSS</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Python</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">OO</a>
+            </li>
+            <li class="topicos__item">
+                <a href="#" class="topicos__link">Java</a>
+            </li>
+        </ul>
+       </section>
+       <section class="contato">
+        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        <input type="email" placeholder="Cadastre-se email" class="contato__email">
+
+       </section>
+
+       <script src="https://cda.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
+       <script>
+            const swiper = new Swiper('.swiper',{
+                spaceBetween:10,
+                slidesPerView:3,
+                pagination: {
+                    el:'.swiper-pagination',
+                    type: 'bullets',
+                },
+            });
+       </script>  
+
+       <hr>
+       <footer class="rodape">
+            <h2 class="rodape__titulo">Grupo Alura</h2>
+       </footer>
 
   
     </body>
